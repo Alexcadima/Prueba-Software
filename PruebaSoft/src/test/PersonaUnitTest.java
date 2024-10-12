@@ -69,19 +69,8 @@ class PersonaUnitTest {
 	
 	@Test
     public void testDepositarDinero() {
-		
-		
-		//Mockito.when(persona.getCuentaBancaria().getSaldo()).thenReturn(1000.0);
-		//persona.getCuentaBancaria().setSueldo(1000.0);
-		
-		//cuentaMock.setSueldo(1000.0);
-		//cuentaMock.depositar(500.0);
-		//persona.depositarDinero(500.0);
-        assertTrue(persona.depositarDinero(500.0));
-        //assertEquals(1500.0, persona.getCuentaBancaria().getSaldo());
 
-        //persona.depositarDinero(-100.0);
-        //assertEquals(1500.0, persona.getCuentaBancaria().getSaldo());
+        assertTrue(persona.depositarDinero(500.0));
     }
 
 }
