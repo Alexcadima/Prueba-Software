@@ -16,9 +16,9 @@ class PersonaUnitTest {
 	
 	private Persona persona;
 	private CuentaBancaria cuentaMock;
-    private Coche cocheMock;
-    private Tienda tiendaMock;
-    private Producto productoMock;
+	private Coche cocheMock;
+	private Tienda tiendaMock;
+	private Producto productoMock;
 
 	@BeforeEach
 	void setUp() throws Exception {
@@ -61,16 +61,16 @@ class PersonaUnitTest {
 	}
 	
 	@Test
-    public void testConducirCoche() {
+    	public void testConducirCoche() {
 		Mockito.when(persona.getCoche().getMarca()).thenReturn("Toyota");
 		Mockito.when(persona.getCoche().getModelo()).thenReturn("Corolla");
-        assertEquals("Estoy conduciendo mi coche Toyota Corolla", persona.conducirCoche());
-    }
+        	assertEquals("Estoy conduciendo mi coche Toyota Corolla", persona.conducirCoche());
+    	}
 	
 	@Test
-    public void testDepositarDinero() {
+   	 public void testDepositarDinero() {
 
-        assertTrue(persona.depositarDinero(500.0));
-    }
+        	assertTrue(persona.depositarDinero(500.0));
+    	}
 
 }
