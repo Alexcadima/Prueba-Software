@@ -30,15 +30,15 @@ class CuentaBancariaUnitTest {
 
 	@Test
 	public void testRetirarFondosSuficientes() {
-        cuenta.retirar(200.0);
-        assertEquals(800.0, cuenta.getSaldo());
-    }
+	        cuenta.retirar(200.0);
+	        assertEquals(800.0, cuenta.getSaldo());
+	}
 	
 	@Test
 	public void testRetirarFondosInsuficientes() {
-        cuenta.retirar(100.0);
-        assertEquals(01000.0, cuenta.getSaldo());
-    }
+	        cuenta.retirar(100.0);
+	        assertEquals(01000.0, cuenta.getSaldo());
+	}
 
 	@Test
 	void testTransferir() {
