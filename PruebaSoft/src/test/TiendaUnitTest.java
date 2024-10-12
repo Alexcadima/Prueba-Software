@@ -37,18 +37,18 @@ class TiendaUnitTest {
 	}
 	
 	@Test
-    public void testCantidadTotalProductos() {
-        Producto producto2 = Mockito.mock(Producto.class);
-        tienda.agregarProducto(productomock);
-        tienda.agregarProducto(producto2);
-
-        assertEquals(2, tienda.CantidadTotalProductos());
-    }
+    	public void testCantidadTotalProductos() {
+	        Producto producto2 = Mockito.mock(Producto.class);
+	        tienda.agregarProducto(productomock);
+	        tienda.agregarProducto(producto2);
+	
+	        assertEquals(2, tienda.CantidadTotalProductos());
+    	}
 	 
 
 	@Test
 	void testEliminarProducto() {
-	    tienda.agregarProducto(productomock);
+	    	tienda.agregarProducto(productomock);
 		Mockito.when(productomock.getNombre()).thenReturn("leche");
 		assertEquals("leche", productomock.getNombre());
 		assertTrue(tienda.eliminarProducto(productomock));
@@ -59,7 +59,7 @@ class TiendaUnitTest {
 	void testTieneProducto() {
 		tienda.agregarProducto(productomock);
 		Mockito.when(productomock.getNombre()).thenReturn("Caldo");
-        assertEquals("Caldo",productomock.getNombre());
+        	assertEquals("Caldo",productomock.getNombre());
 	}
 
 
