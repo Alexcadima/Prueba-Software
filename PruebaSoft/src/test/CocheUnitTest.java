@@ -18,31 +18,31 @@ class CocheUnitTest {
 	@Test
 	void testAcelerar() {
 		coche.acelerar(20);
-        assertEquals(20, coche.getVelocidad());
+        	assertEquals(20, coche.getVelocidad());
 	}
 
 	@Test
 	void testFrenar() {
 		coche.acelerar(50);
-        coche.frenar(20);
-        assertEquals(30, coche.getVelocidad());
+	        coche.frenar(20);
+	        assertEquals(30, coche.getVelocidad());
 	}
 
 	@Test
 	void testEstaDetenido() {
 		coche.acelerar(10);
-        assertFalse(coche.estaDetenido());
+        	assertFalse(coche.estaDetenido());
 	}
 	
 	@Test
-    public void testEncenderMotorConCombustible() {
-        coche.encenderMotor();
-        assertTrue(coche.isMotorEncendido());
-    }
+	public void testEncenderMotorConCombustible() {
+	        coche.encenderMotor();
+	        assertTrue(coche.isMotorEncendido());
+	}
 	
 	@Test
-    public void testRevisarNivelCombustibleConCombustible() {
+	public void testRevisarNivelCombustibleConCombustible() {
 		coche.setNivelCombustible(0);
-        assertEquals(50, coche.revisarNivelCombustible());
-    }
+        	assertEquals(50, coche.revisarNivelCombustible());
+	}
 }
